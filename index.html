@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Game Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <a class="nav-logo" href="#"><span>//</span> Angad </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#games">Games</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+
+  <div class="hero-content">
+    <p class="hero-tag">Personal Portfolio</p>
+    <h1>
+      <div class="line1">GAME</div>
+      <div class="line2">DESIGNER</div>
+      <div class="line3">& Developer</div>
+    </h1>
+    <p class="hero-desc">
+      I build worlds, systems, and experiences from scratch — 
+      in Godot, Love2D, and Raylib. Passionate about the intersection 
+      of code, art, and interactive storytelling.
+    </p>
+    <div class="hero-btns">
+      <a href="#games" class="btn-primary">▶ View Games</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-terminal">
+    <div class="term-bar">
+      <div class="term-dot" style="background:#ff5f57"></div>
+      <div class="term-dot" style="background:#ffbd2e"></div>
+      <div class="term-dot" style="background:#28ca41"></div>
+      <span style="margin-left:auto;font-family:var(--font-mono);font-size:0.65rem;color:var(--muted)">portfolio.gd</span>
+    </div>
+    <div class="term-body">
+      <div><span class="k">extends</span> GameDesigner</div>
+      <div>&nbsp;</div>
+      <div><span class="k">var</span> name <span class="c">= </span><span class="v">"Your Name"</span></div>
+      <div><span class="k">var</span> engines <span class="c">=</span> [</div>
+      <div>&nbsp;&nbsp;<span class="v">"Godot 4"</span>, <span class="v">"Love2D"</span>, <span class="v">"Raylib"</span></div>
+      <div>]</div>
+      <div><span class="k">var</span> languages <span class="c">=</span> [</div>
+      <div>&nbsp;&nbsp;<span class="v">"GDScript"</span>, <span class="v">"Lua"</span>, <span class="v">"C++"</span></div>
+      <div>]</div>
+      <div>&nbsp;</div>
+      <div><span class="k">func</span> <span class="g">_ready</span>():</div>
+      <div>&nbsp;&nbsp;print(<span class="v">"Let's make something great"</span>)</div>
+      <div>&nbsp;&nbsp;<span class="cursor-blink"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <p class="section-label reveal">// 01 — About Me</p>
+  <h2 class="section-title reveal">WHO I AM</h2>
+  <div class="divider reveal"></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm a <strong>self-taught game developer</strong> who started making games out of pure curiosity — 
+        and never stopped. I've spent my time exploring different engines and paradigms: 
+        the elegance of Love2D's simplicity, the power of raw Raylib in C++, 
+        and the flexibility of Godot's node system.
+      </p>
+      <p>
+        For me, game development isn't just about programming — it's about <strong>systems thinking</strong>, 
+        creating feedback loops that feel satisfying, and building worlds that players 
+        want to inhabit. Every prototype I make teaches me something new about how 
+        people interact with interactive systems.
+      </p>
+    </div>
+    <div class="reveal">
+      <p class="section-label" style="margin-bottom:1.2rem">// Tools & Skills</p>
+      <div class="skills-grid">
+        <div class="skill-chip">
+          <div class="dot" style="background:#48bd83"></div>
+          <span>Godot 4 / GDScript / C#</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:#ff6482"></div>
+          <span>Love2D / Lua</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:var(--accent3)"></div>
+          <span>Raylib / C++</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:var(--accent)"></div>
+          <span>Game Mechanics</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:var(--accent2)"></div>
+          <span>Level Design</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:#a78bfa"></div>
+          <span>Pixel Art / Aseprite</span>
+        </div>
+        <div class="skill-chip">
+          <div class="dot" style="background:#fb923c"></div>
+          <span>Git / Version Control</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="games">
+  <p class="section-label reveal">// 02 — Projects</p>
+  <h2 class="section-title reveal">MY GAMES</h2>
+  <div class="divider reveal"></div>
+
+  <div class="games-grid reveal">
+
+    <div class="game-card">
+      <img src="art/love2d-rpg.png" alt="Love2D RPG" class="game-card-img" />
+      <div class="game-card-body">
+        <span class="game-engine-badge badge-godot">Love 2D</span>
+        <h3 class="game-title">Simple Love2D rpg</h3>
+        <p class="game-desc">
+          My first project in game development. After discovering a Lua-based library, I built this as an experiment to understand core gameplay systems, logic, and how interactive experiences are created from scratch.
+        </p>
+        <div class="game-tags">
+          <span class="game-tag">2D</span>
+          <span class="game-tag">Lua</span>
+          <span class="game-tag">Physics</span>
+        </div>
+        <div class="game-actions">
+          <a href="https://github.com/UchihaSuscat/love2d-Rpg" target="_blank" class="btn-gh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-placeholder">
+       <img src="art/love2d-platformer-physics.png" alt="Love2D physics" class="game-card-img" /> 
+      </div>
+      <div class="game-card-body">
+        <span class="game-engine-badge badge-godot">Love 2D</span>
+        <h3 class="game-title">Platformer Physics Prototype</h3>
+        <p class="game-desc">
+          The first platformer physics simulation I ever built. 
+        </p>
+        <div class="game-tags">
+          <span class="game-tag">Platformer</span>
+          <span class="game-tag">physics</span>
+          <span class="game-tag">Love 2D</span>
+          <span class="game-tag">Lua</span>
+        </div>
+        <div class="game-actions">
+          <a href="https://github.com/UchihaSuscat/platformer-physics-prototype" target="_blank" class="btn-gh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-placeholder">          
+       <img src="art/coin-packup.png" alt="Coin-packup" class="game-card-img" /> 
+      </div>
+      <div class="game-card-body">
+        <span class="game-engine-badge badge-godot">Godot 4</span>
+        <h3 class="game-title">Coin-packup</h3>
+        <p class="game-desc">
+         A fast-paced coin collection game — grab every coin as quickly as you can. 
+        </p>
+        <div class="game-tags">
+          <span class="game-tag">Godot</span>
+          <span class="game-tag">GDScript</span>
+          <span class="game-tag">2D</span>
+          <span class="game-tag">Arcade</span>
+          <span class="game-tag">Casual</span>
+        </div>
+        <div class="game-actions">
+          <a href="https://github.com/UchihaSuscat/coin-packup" target="_blank" class="btn-gh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-placeholder">
+       <img src="art/scary-doomish.png" alt="Doom" class="game-card-img" /> 
+      </div>
+      <div class="game-card-body">
+        <span class="game-engine-badge badge-love2d">Godot 4</span>
+        <h3 class="game-title">Scary Doomish</h3>
+        <p class="game-desc">
+          My first dive into 3D — a doom-inspired horror shooter where dark corridors and lurking threats made sure I never got too comfortable with the engine.
+        </p>
+        <div class="game-tags">
+          <span class="game-tag">Godot</span>
+          <span class="game-tag">GDScript</span>
+          <span class="game-tag">3D</span>
+        </div>
+        <div class="game-actions">
+          <a href="https://github.com/UchihaSuscat/scary-doomish" target="_blank" class="btn-gh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-placeholder">
+         <img src="art/pong.png" alt="pong" class="game-card-img" /> 
+      </div>
+      <div class="game-card-body">
+        <span class="game-engine-badge badge-raylib">Love 2D</span>
+        <h3 class="game-title">Pong</h3>
+        <p class="game-desc">
+          A pong remake in Love 2D. 
+        </p>
+        <div class="game-tags">
+          <span class="game-tag">Love 2D</span>
+          <span class="game-tag">Lua</span>
+          <span class="game-tag">Arcade</span>
+          <span class="game-tag">Classic</span>
+        </div>
+        <div class="game-actions">
+          <a href="https://github.com/UchihaSuscat/love2d-pong" target="_blank" class="btn-gh">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="process">
+  <p class="section-label reveal">// 03 — How I Work</p>
+  <h2 class="section-title reveal">MY PROCESS</h2>
+  <div class="divider reveal"></div>
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Concept & Feel</div>
+      <p class="step-desc">I start with a core mechanic or emotion I want to create. What should the player feel? What's the one thing that makes this fun?</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Prototype Fast</div>
+      <p class="step-desc">Build the ugliest playable thing as fast as possible. No art, just boxes and logic — does the core loop feel good?</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Iterate & Polish</div>
+      <p class="step-desc">Layer in juice: sound, particles, screenshake, visual feedback. Game-feel is the invisible ingredient players always notice.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Ship & Reflect</div>
+      <p class="step-desc">Put it in front of someone. Watch them play without saying a word. Their confusion is the most honest feedback you'll get.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner">
+    <p class="section-label reveal" style="text-align:center;justify-content:center">// 04 — Let's Talk</p>
+    <h2 class="contact-big reveal">LET'S<br><span>MAKE</span><br>GAMES</h2>
+    <div class="contact-links reveal">
+      <a href="mailto:angadsaini2008@gmail.com" class="btn-primary">✉ angadsaini2008@gmail.com</a>
+      <a href="https://github.com/UchihaSuscat" target="_blank" class="btn-outline">GitHub</a>
+      <a href="https://coffeeop.itch.io" target="_blank" class="btn-outline">itch.io</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 <span>Angad</span> — Game Developer</div>
+</footer>
+
+<div id="play-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="modal-title">GAME TITLE</h3>
+      <button class="modal-close" onclick="closeGame()">✕</button>
+    </div>
+    <div id="game-frame-wrap">
+      <iframe id="game-frame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <p class="modal-note">
+      // Godot HTML5 export · Use arrow keys / WASD · Press F to fullscreen
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
